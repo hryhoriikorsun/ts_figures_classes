@@ -25,11 +25,11 @@ export class Triangle implements Figure {
     public readonly shape: Shape = Shape.Triangle,
   ) {
     if (a <= 0 || b <= 0 || c <= 0) {
-      throw new Error('Every side should be more then 0');
+      throw new Error('Every side should be more than 0');
     }
 
     if (a >= b + c || b >= a + c || c >= a + b) {
-      throw new Error('One side can`t be lonber then sum of two others');
+      throw new Error('One side can`t be longer than the sum of the other two');
     }
   }
 
@@ -53,7 +53,7 @@ export class Circle implements Figure {
     public readonly shape: Shape = Shape.Circle,
   ) {
     if (radius <= 0) {
-      throw new Error('Radius ban`t be less then 1');
+      throw new Error('Radius can`t be less then 1');
     }
   }
 
@@ -77,7 +77,7 @@ export class Rectangle implements Figure {
     public readonly shape: Shape = Shape.Rectangle,
   ) {
     if (width <= 0 || height <= 0) {
-      throw new Error('Width and height ban`t be less then 1');
+      throw new Error('Every side should be more than 0');
     }
   }
 
